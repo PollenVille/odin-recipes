@@ -3,12 +3,149 @@
     <head>
         <meta charset="UTF-8">
         <title>Odin Recipes</title>
+        <link href="styles.css" rel="stylesheet">
     </head>
 
     <body>
-        <h1>Odin Recipes</h1>
-        <a href="./recipes/simple_cottage_cheese_pancakes.html">Simple Cottage Cheese Pancakes</a>
-        <a href="./recipes/cottage_cheese_bread.html">Cottage Cheese Bread</a>
-        <a href="./recipes/cottage_meatloaf.html">Cottage Meatloaf</a>
+        <div id="Head">
+            <h1>The Modest Cottage</h1>
+            <h2 class="centered-text">Home to the warmest recipes</h2>
+        </div>
+        
+        <div class="centered-text">
+            <h3>Fresh Arrivals</h3>
+        </div>
+
+        <!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img class="center-img" src="https://www.allrecipes.com/thmb/xzCgjCxuf_KRJAlgi0r49wVX6Jo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ar-simple-cottage-cheese-pancakes-232695-4x3-7198c0cd47ac46a0975b7b335bb7b770.jpg" style="height:500px">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img class="center-img" src="https://www.allrecipes.com/thmb/ymi4ZzafjtiRp8FzVIqAQt-9b0s=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8711903-Cottage-Cheese-Bread-ddmfs-4x3-11e0a7f13db044de9a9cbac27fcbaea2.jpg" style="height:500px">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img class="center-img" src="https://www.allrecipes.com/thmb/MUGQFBgmYnehYesjXYor_CPpVRs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/6594174-50bfbe19d7e3408d88c52ea06db2f95a.jpg" style="height:500px">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img class="center-img" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F569628.jpg&q=60&c=sc&poi=auto&orient=true&h=512" style="height:500px">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img class="center-img" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F9271104.jpg&q=60&c=sc&poi=auto&orient=true&h=512" style="height:500px">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img class="center-img" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3479342.jpg&q=60&c=sc&poi=auto&orient=true&h=512" style="height:500px">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="https://www.allrecipes.com/thmb/xzCgjCxuf_KRJAlgi0r49wVX6Jo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ar-simple-cottage-cheese-pancakes-232695-4x3-7198c0cd47ac46a0975b7b335bb7b770.jpg" style="width:100%" onclick="currentSlide(1)" alt="Cottage Cheese Pancakes">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://www.allrecipes.com/thmb/ymi4ZzafjtiRp8FzVIqAQt-9b0s=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8711903-Cottage-Cheese-Bread-ddmfs-4x3-11e0a7f13db044de9a9cbac27fcbaea2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cottage Cheese Bread">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://www.allrecipes.com/thmb/MUGQFBgmYnehYesjXYor_CPpVRs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/6594174-50bfbe19d7e3408d88c52ea06db2f95a.jpg" style="width:100%" onclick="currentSlide(3)" alt="Broccoli Cheese Cornbread">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F569628.jpg&q=60&c=sc&poi=auto&orient=true&h=512" style="width:100%" onclick="currentSlide(4)" alt="Cottage Cheese Roast">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F9271104.jpg&q=60&c=sc&poi=auto&orient=true&h=512" style="width:100%" onclick="currentSlide(5)" alt="Spinach Quiche with Cottage Cheese">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3479342.jpg&q=60&c=sc&poi=auto&orient=true&h=512" style="width:100%" onclick="currentSlide(6)" alt="Spaghetti Pie">
+      </div>
+    </div>
+
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "flex";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+
+
+    <div class="centered-text">
+        <h3>Editor's Choice</h3>
+    </div>
+
     </body>
+
+
+
+
+
+    <!-- <body>
+        <h1 id="center-title">Odin Recipes</h1>
+        <div class="links">
+            <a href="./recipes/simple_cottage_cheese_pancakes.html">
+                <div class="recipe">
+                    <img src="https://www.allrecipes.com/thmb/xzCgjCxuf_KRJAlgi0r49wVX6Jo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ar-simple-cottage-cheese-pancakes-232695-4x3-7198c0cd47ac46a0975b7b335bb7b770.jpg" width="350">
+                    <p class="rec-name">Cottage Cheese Pancakes</p>
+                </div>
+            </a>
+            <a href="./recipes/cottage_cheese_bread.html">
+                <div class="recipe">
+                    <img src="https://www.allrecipes.com/thmb/ymi4ZzafjtiRp8FzVIqAQt-9b0s=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8711903-Cottage-Cheese-Bread-ddmfs-4x3-11e0a7f13db044de9a9cbac27fcbaea2.jpg" width="350">
+                    <p class="rec-name">Cottage Cheese Bread</p>
+                </div>
+            </a>
+
+            <a href="./recipes/cottage_meatloaf.html">
+                <div class="recipe">
+                    <img src="https://www.allrecipes.com/thmb/c-FZ4hJnQn-L7nl6fSnnRyhghVE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1784714-1c25b3523d0146009bf7fcfd277554c1.jpg" width="350">
+                    <p class="rec-name">Meatloaf<p>
+                </div>
+            </a>
+        </div>
+    </body> -->
 </html>
